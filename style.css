@@ -1,0 +1,134 @@
+/* --bg : #3B4664; */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+
+*{
+    margin: 0;
+}
+html{
+    font-size: 2rem;
+}
+body{
+    background-color: #3B4664;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+  
+}
+
+
+/* Default styles */
+.calculator {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    /* border: 2px solid #ccc; */
+    border-radius: 5px;
+    margin-top: 5%;
+  
+  
+}
+.calculator  h3{
+
+   font-size: .6rem;
+   color: #FFFFFF;
+  margin-bottom: 8px;
+   font-weight: 600;
+}
+.output-screen {
+    text-align: left;
+    margin-bottom: 10px;
+    max-width: 400px;
+    /* background-color: aqua; */
+}
+#display{
+
+    width: 89%;
+    padding: 1.7vw 1.6vw;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.7vw;
+    font-weight: 800;
+    text-align: right;
+    background-color: #181F32;
+    color: #FFFFFF;
+  
+  
+   
+}
+
+.cal-btn {
+    background-color: #252D44;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    padding: 1.5vw .2vw;
+    border-radius: 10px;
+    margin-top: 10px;
+    /* height: 52vh; */
+}
+
+.calculator .cal-btn .btn{
+
+ 
+    height: 7vh;
+     
+    padding:2px 18px;
+    /* background-color: yellowgreen; */
+   
+   
+   
+   }
+
+   .calculator .cal-btn .btn button{
+    width: 4vw;
+    padding: .6vw 1vw;
+    font-size: .6rem;
+    font-weight: 800;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    line-height: 1.9vw;
+    background-color: #EAE3DB;
+    color: #3B4664;
+}
+
+.btn {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.btn button {
+    flex: 1;
+}
+
+.equal-btn {
+    grid-column: span 2;
+}
+.calculator .cal-btn .btn .color-btn{
+    background-color: #647299;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.calculator .cal-btn .btn  .equal-btn{
+    background-color: #D13F30;
+    color: #FFFFFF;
+} 
+/* Responsive styles */
+@media (max-width: 600px) {
+    .calculator {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    
+}
+
+@media (max-width: 400px) {
+    .btn {
+        flex-direction: column;
+    }
+}
